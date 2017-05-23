@@ -1,4 +1,4 @@
-def build(string):
+def compress(string):
     if string is None or not string:
         return string
     result = ''
@@ -8,14 +8,12 @@ def build(string):
         if char == prev_char:
             count += 1
         else:
-            result += calc_result(prev_char, count)
+            result += calc_partial_result(prev_char, count)
             prev_char = char
             count = 1
-    result += calc_result(prev_char, count)
+    result += calc_partial_result(prev_char, count)
     return result if len(result) < len(string) else string
 
-def calc_result(prev_char, count):
-    return prev_char + (str(count) if count > 1 else '')
 
-value= build("")
-print(value)
+def calc_partial_result(prev_char, count):
+    return prev_char + (str(count) if count > 1 else '')
