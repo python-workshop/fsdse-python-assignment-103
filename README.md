@@ -19,7 +19,7 @@
 * Input 
       
        Type:  String
-       Value: 'AABBBCDDEEEE
+       Value: 'AABBBCDDEEEE'
        
 * Expected Output
 
