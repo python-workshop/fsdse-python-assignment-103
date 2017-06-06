@@ -12,3 +12,16 @@
 * Can we assume this fits in memory?
    * Yes
 
+
+**Instructions:**
+* Program should be written in file build.py
+* Function name should be compress.
+* Input 
+      
+       Type:  String
+       Value: 'AABBBCDDEEEE
+       
+* Expected Output
+
+        Type:  String
+        Value: 'A2B3CD2E4'
