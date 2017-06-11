@@ -16,11 +16,11 @@
 **Instructions:**
 * Program should be written in file build.py
 * Function name should be compress.
-* Input 
-      
+* Input
+
        Type:  String
        Value: 'AABBBCDDEEEE'
-       
+
 * Expected Output
 
         Type:  String
