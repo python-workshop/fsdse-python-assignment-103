@@ -1,29 +1,30 @@
 import itertools
 
-def compress(st):
+def compress(string):
     dic={}
     cnt=0
-    if st == None:
+    if string == None:
         return None
-    if st == '':
+    if string == '':
         return ''
-    s_op=''
+    em_str = ''
     keys=[]
-    groups=[]
-    for k,g in itertools.groupby(st):
+    values=[]
+    for k,v in itertools.groupby(string):
         keys.append(k)
-        groups.append(list(g))
+        values.append(list(v))
     print keys
-    print groups
-    for e in groups:
-        if len(e)>1:
-            s_op = s_op + e[0] + str(len(e))
+    print values
+    for element in values:
+        if len(element)>1:
+            em_str = em_str + element[0] + str(len(element))
         else:
-            s_op = s_op + e[0]
-    if(len(st)>len(s_op)):
-        return s_op
+            em_str = em_str + element[0]
+
+    if(len(string)>len(em_str)):
+        return em_str
     else:
-        return st
+        return string
 
 # compress('AABCCCDDDD')
 # Output :
